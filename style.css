@@ -1,0 +1,161 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+    font-family: Arial, sans-serif; 
+    width: 100%;
+    background: linear-gradient(to right, #ffff71 ,rgb(237, 188, 196));
+    
+    
+
+}
+
+.header {
+    background-color: rgb(252, 35, 39);
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    letter-spacing: 1px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header a {
+    color: black;
+    text-decoration: none;
+    margin: 10px 20px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.header a:hover {
+    background-color: gray;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    grid-gap: 10px;
+    justify-content: start;
+    border: #333;
+    
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .grid-container {
+        grid-template-columns: 1fr; 
+    }
+}
+
+.h1{
+    text-align: left;
+   
+}
+.content {
+    padding: 20px;
+    margin-top:50px;
+    margin-bottom:50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    letter-spacing: 2px;
+    display: grid;
+    gap:10px;
+    word-spacing: 2px;
+    align-items: center;
+    
+    
+    
+}
+.c{
+    background: linear-gradient(to right, #ffff71 ,rgb(245, 221, 225));
+    margin-right: -10px;
+    margin-bottom: -115px;
+}
+.space {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    
+}
+
+.h1 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #ed64a6;
+}
+
+.para {
+    font-size: 0.875rem;
+    color: black;
+    line-height: 1.6;
+    
+}
+
+.clickme {
+    color: white;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    border-radius: 1px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition-property: color, background-color, border-color;
+    transition-duration: 150ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    background-color: rgb(252, 35, 39);
+    border: none; 
+    padding: 10px 100px;
+    margin-top: 70px;
+}
+
+.clickme:hover {
+    background-color: rgba(67, 156, 4, 0.9);
+}
+
+.clickme:disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.burkar img
+ {
+    width: 100%;
+    height: 150%;
+}
+
+@media only screen and (max-width: 600px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .header a {
+        margin: 5px; 
+    }
+
+    .grid-container {
+        grid-gap: 10px; 
+    }
+
+    .content {
+        padding: 10px; 
+    }
+
+    .h1 {
+        font-size: 1.5rem; 
+    }
+
+    .para {
+        font-size: 0.75rem; 
+    }
+
+    .clickme {
+        font-size: 0.75rem; 
+        padding: 3px 8px; 
+    }
+}
